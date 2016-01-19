@@ -4,10 +4,15 @@
     <color name="primary_dark">#000000</color>
     <color name="primary_pressed">#4a777777</color>
 
+    <color name="header_background">@color/primary</color>
+	
     <color name="accent">#e91e63</color>
-    <color name="ripple_accent">#80e91e63</color>
-    <color name="accent_pressed">#ec407a</color>
     <color name="accent_secondary">@color/accent</color>
+
+    <color name="ripple_accent">#80e91e63</color>
+
+    <color name="fab">@color/accent</color>
+    <color name="fab_pressed">#ec407a</color>
 
     <color name="cardsbg">#80000000</color>
     <!-- Color for Backgrounds -->

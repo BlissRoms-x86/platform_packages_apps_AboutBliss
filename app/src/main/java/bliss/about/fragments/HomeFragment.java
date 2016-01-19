@@ -29,8 +29,8 @@ public class HomeFragment extends Fragment {
         ObservableScrollView content = (ObservableScrollView) root.findViewById(R.id.HomeContent);
 
         FloatingActionButton fab = (FloatingActionButton) root.findViewById(R.id.apply_btn);
-        fab.setColorNormal(getResources().getColor(R.color.accent));
-        fab.setColorPressed(getResources().getColor(R.color.accent_pressed));
+        fab.setColorNormal(getResources().getColor(R.color.fab));
+        fab.setColorPressed(getResources().getColor(R.color.fab_pressed));
         fab.setColorRipple(getResources().getColor(R.color.semitransparent_white));
         fab.show(true);
         fab.attachToScrollView(content);

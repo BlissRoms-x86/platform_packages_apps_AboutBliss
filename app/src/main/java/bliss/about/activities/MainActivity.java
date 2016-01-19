@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 .addProfiles(
                         new ProfileDrawerItem().withName("Team Bliss").withIcon(getResources().getDrawable(R.drawable.bliss_logo))
                 )
-                .withHeaderBackground(android.R.color.black)
+                .withHeaderBackground(getResources().getColor(R.color.header_background))
                 .withSelectionFirstLine(getResources().getString(R.string.app_long_name))
                 .withSelectionSecondLine(Build.DEVICE)
                 .withSavedInstance(savedInstanceState)
