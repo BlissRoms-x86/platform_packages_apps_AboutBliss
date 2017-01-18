@@ -34,6 +34,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.android.settings.DeviceInfoSettings;
 import com.blissroms.blissify.PagerSlidingTabStrip;
+import com.blissroms.about.AboutBliss;
 import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.SettingsPreferenceFragment;
@@ -43,7 +44,7 @@ import com.android.internal.logging.MetricsProto.MetricsEvent;
 import java.util.ArrayList;
 import java.util.List;
 
-public class About extends SettingsPreferenceFragment {
+public class BlissInfoSettings extends SettingsPreferenceFragment {
 
     ViewPager mViewPager;
     String titleString[];
@@ -56,7 +57,7 @@ public class About extends SettingsPreferenceFragment {
         mContainer = container;
 	final ActionBar actionBar = getActivity().getActionBar();
 
-        View view = inflater.inflate(R.layout.additional_settings, container, false);
+        View view = inflater.inflate(R.layout.blissify_ui, container, false);
         mViewPager = (ViewPager) view.findViewById(R.id.pager);
 	mTabs = (PagerSlidingTabStrip) view.findViewById(R.id.tabs);
 
@@ -116,7 +117,7 @@ public class About extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-		    getString(R.string.about_settings),
+		    getString(R.string.about_phone_title),
   		    getString(R.string.about_bliss_title)};
         return titleString;
     }

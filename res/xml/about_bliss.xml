@@ -16,5 +16,59 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/about_bliss_title" >
+    <PreferenceScreen android:layout="@layout/bliss_logo_row" android:key="bliss_logo" />
+
+        <!-- BlissRoms OTA -->
+        <PreferenceScreen 
+            android:key="bliss_ota"
+            android:title="@string/bliss_ota">
+                <intent
+                    android:action="android.intent.action.MAIN"
+    		        android:targetPackage="blissroms.updates"
+                    android:targetClass="blissroms.updates.activities.MainActivity" />
+        </PreferenceScreen>
+
+	<!-- Bliss version -->
+        <Preference android:key="bliss_version"
+            style="?android:preferenceInformationStyle"
+            android:title="@string/bliss_version"
+            android:summary="@string/bliss_version_default" />
+
+	<!-- Bliss build date -->
+        <Preference android:key="build_date"
+            style="?android:preferenceInformationStyle"
+            android:title="@string/build_date"
+            android:summary="@string/build_date_default" />
+
+	<!-- Changelog -->
+        <PreferenceScreen
+            android:key="changelog"
+            android:title="@string/changelog_bliss_title"
+            android:fragment="com.blissroms.about.Changelog"
+	    android:summary="@string/changelog_summary" />
+
+        <!-- Bliss Share -->
+        <PreferenceScreen
+            android:key="share"
+            android:title="@string/share_bliss_title"
+            android:summary="@string/share_bliss_summary" />
+
+        <!-- Bliss Github -->
+        <PreferenceScreen
+            android:key="bliss_source"
+            android:title="@string/bliss_source_title"
+            android:summary="@string/bliss_source_summary" />
+
+	<!-- Bliss Telegram -->
+        <PreferenceScreen
+            android:key="bliss_telegram"
+            android:title="@string/bliss_telegram_title"
+            android:summary="@string/bliss_telegram_summary" />
+
+        <!-- Bliss GooglePlus -->
+        <PreferenceScreen
+            android:key="bliss_google_plus"
+            android:title="@string/bliss_google_plus_title"
+            android:summary="@string/bliss_google_plus_summary" />
 
 </PreferenceScreen>

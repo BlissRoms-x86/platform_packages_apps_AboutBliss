@@ -17,5 +17,30 @@
 
     <!-- About Bliss -->
     <string name="about_bliss_title">Bliss</string>
+    <string name="about_phone_title">Phone</string>
+    <string name="share_bliss_title">Share BlissRoms</string>
+    <string name="share_bliss_summary">Let everyone know you are a Bliss</string>
+    <string name="share_message">get to know about #BlissRoms @ https://plus.google.com/communities/118265887490106132524</string>
+    <string name="share_chooser_title">Share BlissRoms</string>
+    <string name="bliss_source_title">Github</string>
+    <string name="bliss_source_summary">Build bliss for any device</string>
+    <string name="bliss_google_plus_title">Google</string>
+    <string name="bliss_google_plus_summary">Visit our G page for support and news</string>
+    <string name="team_bliss_title">Teambliss</string>
+    <string name="bliss_telegram_title">Telegram</string>
+    <string name="bliss_telegram_summary">Get Updates on News and Device builds via telegram</string>
+
+   <!-- Bliss version -->
+   <string name="bliss_version">Bliss version</string>
+   <string name="bliss_version_default">Unknown</string>
+
+   <!-- Bliss build date -->
+   <string name="build_date">Bliss build date</string>
+   <string name="build_date_default">2014-01-01-0000</string>
+
+    <!-- Changelog -->
+    <string name="changelog_bliss_title">Changelog</string>
+    <string name="changelog_bliss_error">Unable to load changelog</string>
+    <string name="changelog_summary">Quick peek on an update</string>
 
 </resources>
